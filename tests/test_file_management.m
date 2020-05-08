@@ -2,13 +2,11 @@
 
 % TODO: add this path only once before running MOxUnit, not in all tests.
 addpath(genpath('../'));
-PATH_DICOM = 'dicom_unsorted';
 
 function test_suite=test_file_management
     test_functions=localfunctions();
     initTestSuite;
 
 function test_dicomsorts
-    mkdir('dicom_sorted')
-    % TODO: uncomment once unsorted data are added
-%     sortdicoms(PATH_DICOM, 'dicom_sorted')
+    sortdicoms('dicom_unsorted/', 'dicom_sorted/');
+    assert(isfile('dicom_sorted/06_a_gre_DYNshim/echo_11.5/acdc_95p-HC7;NC1,2-0001-0001.dcm'));
