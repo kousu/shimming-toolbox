@@ -23,5 +23,5 @@ jobs:
         rm data.zip
         ls -la
 
-    # Run MOxUnit test
-     - uses: joergbrech/moxunit-action@master
+    - name: Run MOxUnit test
+      uses: joergbrech/moxunit-action@master
