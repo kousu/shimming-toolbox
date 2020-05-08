@@ -21,8 +21,10 @@ jobs:
         wget -O data.zip https://osf.io/7d2j5/download
         unzip data.zip
         rm data.zip
-        pwd
-        ls
+        cd ..
 
     - name: Run MOxUnit tests
       uses: joergbrech/moxunit-action@master
+        with:
+          test: tests
+          src: misc Aux Coils external Img
