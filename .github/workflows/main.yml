@@ -17,11 +17,12 @@ jobs:
 
     - name: Download mock data
       run: |
-        cd ~
+        cd tests
         wget -O data.zip https://osf.io/7d2j5/download
         unzip data.zip
         rm data.zip
-        ls -la
+        pwd
+        ls
 
-    - name: Run MOxUnit test
+    - name: Run MOxUnit tests
       uses: joergbrech/moxunit-action@master
