@@ -2,6 +2,7 @@
 
 function test_suite=test_file_management
     test_functions=localfunctions();
+    addpath(genpath('../'))
     initTestSuite;
 
 function test_dicomsorts
