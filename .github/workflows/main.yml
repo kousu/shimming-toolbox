@@ -25,6 +25,6 @@ jobs:
 
     - name: Run MOxUnit tests
       uses: joergbrech/moxunit-action@master
-        with:
-          test: tests
-          src: misc Aux Coils external Img
+      with:
+        test: tests
+        src: misc Aux Coils external Img
