@@ -16,4 +16,7 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
+    matlab -nojvm -nodisplay -nosplash -r "disp('Hello from Matlab');"
+    echo "$PATH"
+    ls -l /bin
   displayName: 'Run a multi-line script'
